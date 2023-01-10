@@ -1,0 +1,8 @@
+<h1>Post attivi</h1>
+
+<div class="card" style="width: 18rem;" *ngFor="let p of posts">
+    <div class="card-body">
+        <h5 class="card-title">{{p.id}} - {{p.title}}</h5>
+        <p class="card-text">{{p.body}}</p>
+    </div>
+</div>
