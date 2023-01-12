@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "body":"Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+        "title":"Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+        "active":true,
+        "type": "news",
+        "author": "aut1"
+    },
+    {
+        "id":2,
+        "body":"Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+        "title":"Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+        "active":true,
+        "type": "politics",
+        "author": "aut2"
+    },
+    {
+        "id":3,
+        "body":"Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+        "title":"Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+        "active":true,
+        "type": "news",
+        "author": "aut3"
+    },
+    {
+        "id":4,
+        "body":"Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+        "title":"Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+        "active":false,
+        "type": "politics",
+        "author": "aut4"
+    },
+    {
+        "id":5,
+        "body":"Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+        "title":"Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+        "active":false,
+        "type": "news",
+        "author": "aut5"
+    }
+]
