@@ -26,4 +26,10 @@ export class CompletatiComponent implements OnInit {
 
   }
 
+  elimina(id:number){
+    this.ts.completa(id).then(t=>{
+      this.t = this.t.filter(todo=>todo.id != id)
+    })
+  }
+
 }

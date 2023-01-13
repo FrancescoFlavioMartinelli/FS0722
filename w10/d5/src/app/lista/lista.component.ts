@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todo } from '../todo';
 
 @Component({
@@ -8,13 +8,21 @@ import { Todo } from '../todo';
 })
 export class ListaComponent implements OnInit {
 
+  @Input() compl!:boolean
+
   @Input() todos:Todo[] = []
+
+  @Output() buttonEvent = new EventEmitter()
 
   // completa:boolean;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  completaElimina(id:number) {
+    this.buttonEvent.emit(id)
   }
 
 }

@@ -5,6 +5,10 @@
         <ng-template #elimina>
             <button >Elimina</button>
         </ng-template> -->
-        <ng-content></ng-content>
+        <!-- ngContent appare solo una volta e non per ogni iterazione dell'ngFor quindi non è adatto -->
+        <!-- <ng-content></ng-content> -->
+
+        <!-- useremo un parametro boolean in input per caprie che pulsante visualizzare -->
+        <button class="btn" [ngClass]="{'bg-warning': compl, 'bg-success': !compl}" (click)="completaElimina(t.id)">{{compl? "Elimina":"Completa"}}</button>
     </li>
 </ul>

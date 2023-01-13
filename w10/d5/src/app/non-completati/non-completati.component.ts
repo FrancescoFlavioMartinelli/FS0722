@@ -30,4 +30,11 @@ export class NonCompletatiComponent implements OnInit {
     })
   }
 
+
+  completa(id:number){
+    this.ts.completa(id).then(()=>{
+      this.t = this.t.filter(todo=>todo.id != id)
+    })
+  }
+
 }
