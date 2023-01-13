@@ -1,0 +1,10 @@
+<ul class="list-group">
+    <li class="list-group-item" aria-disabled="true" *ngFor="let t of todos">
+        {{t.id}} - {{t.title}}
+        <!-- <button *ngIf="completa==true; else elimina">Completa</button>
+        <ng-template #elimina>
+            <button >Elimina</button>
+        </ng-template> -->
+        <ng-content></ng-content>
+    </li>
+</ul>
