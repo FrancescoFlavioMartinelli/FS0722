@@ -1,0 +1,20 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="photo.thumbnailUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{photo.id}}</h5>
+
+      <!-- <a class="btn btn-warning" *ngIf="liked;else likeFalse">Non mi piace</a>
+      <ng-template>
+          <a class="btn btn-warning" #likeFalse>Mi piace</a>
+      </ng-template>
+
+      <a class="btn btn-warning" *ngIf="liked">Non mi piace</a>
+      <a class="btn btn-success" *ngIf="!liked">Mi piace</a> -->
+
+      <a (click)="toggleLiked()" class="btn" [ngClass]="{'btn-warning': liked, 'btn-success': !liked}" >{{liked?'Non mi piace':'Mi piace'}}</a>
+
+
+
+      <button href="#" class="btn btn-danger" (click)="elimina()" [disabled]="loading">Elimina</button>
+    </div>
+  </div>
