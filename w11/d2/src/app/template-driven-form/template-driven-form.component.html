@@ -1,0 +1,27 @@
+<form class="row g-3 needs-validation" #f="ngForm" (ngSubmit)="submit(f)">
+    <div class="col-12">
+      <label for="name" class="form-label">NAME</label>
+      <input type="text" class="form-control" id="name" name="name" ngModel #name="ngModel" required>
+      <div *ngIf="name.invalid && name.touched">
+        Nome richiesto
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="planet" class="form-label">PLANET</label>
+      <input type="text" class="form-control" id="planet" name="planet" ngModel #planet="ngModel" required minlength="5">
+      <div *ngIf="planet.errors && planet.touched">
+        <div *ngIf="planet.errors['required']">
+            Pianeta richiesto
+        </div>
+        <div *ngIf="planet.errors['minlength']">
+            Lunghezza minima, mancano {{5 - planet.errors['minlength'].actualLength}}
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" [ngClass]="{'disabled': f.invalid}">Submit form</button>
+    </div>
+</form>

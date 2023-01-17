@@ -1,0 +1,20 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    Name:
+    <input type="text" formControlName="name">
+
+    Alterego:
+    <input type="text" formControlName="alterego">
+
+    PLANET:
+    <input type="text" formControlName="planet">
+
+    POWERS:
+    <button (click)="addPower()">add</button>
+    <div formArrayName="powers">
+        <div *ngFor="let c of getFormArray('powers').controls; let i = index" >
+            <input type="text" [formControlName]="i">
+        </div>
+    </div>
+
+    <button type="submit"></button>
+</form>
