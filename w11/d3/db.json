@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "email": "test@test.test",
+      "password": "$2a$10$6UXrY35rRqFeWrAeZ7yNY.tDQO0sNAcCrtNbEp7BcwUiQBMze3TIC",
+      "name": "test",
+      "surname": "test",
+      "id": 1
+    }
+  ],
+  "sports": [
+    {
+      "nome": "calcio",
+      "id": 1
+    },
+    {
+      "nome": "tennis",
+      "id": 2
+    }
+  ]
+}
