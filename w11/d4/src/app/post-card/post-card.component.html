@@ -1,0 +1,17 @@
+<div class="card" style="width: 18rem;"
+[ngClass]="{
+    'bg-success': post.type == 'news',
+    'bg-danger': post.type == 'politics'
+}">
+    <div class="card-body">
+        <h5 class="card-title">{{post.id}} - {{post.title | maiuscolo}}</h5>
+        <p class="card-text">{{post.body}}</p>
+    </div>
+
+    <ng-content></ng-content>
+
+    <!-- <button class="btn btn-primary" [routerLink]="'dettagli/' + post.id">Dettagli</button> -->
+    <!-- <button class="btn btn-primary" [routerLink]="['details/', post.id]">Dettagli</button> -->
+    <button class="btn btn-primary" [routerLink]="['../details/', post.id]">Dettagli</button>
+
+</div>

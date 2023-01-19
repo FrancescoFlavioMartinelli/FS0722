@@ -1,0 +1,5 @@
+<form #f="ngForm" (ngSubmit)="submit(f)">
+    <input type="text" name="email" ngModel>
+    <input type="password" name="password" ngModel>
+    <button type="submit" [ngClass]="{'disabled': f.invalid}">Login</button>
+</form>

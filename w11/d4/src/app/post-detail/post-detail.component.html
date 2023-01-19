@@ -1,0 +1,9 @@
+<h1>Dettagli post</h1>
+<!-- <ul>
+    <li>Id: {{post ? post.id : "und"}}</li>
+</ul> -->
+<ul *ngIf="post">
+    <li>Id: {{post.id}}</li>
+</ul>
+
+<h2 *ngIf="post == undefined">POST NON TROVATO</h2>

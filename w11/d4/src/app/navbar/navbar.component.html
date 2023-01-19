@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">{{logged?"CIAO " + nomeUser:"ACCEDI"}}</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/active" routerLinkActive="active">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/inactive" routerLinkActive="active">Inactive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+          </li>
+          <!-- TODO: ngIf -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/auth/login" routerLinkActive="active" *ngIf="!logged">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/auth/signup" routerLinkActive="active" *ngIf="!logged">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="logout()" *ngIf="logged">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

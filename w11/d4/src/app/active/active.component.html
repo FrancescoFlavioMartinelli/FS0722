@@ -1,0 +1,8 @@
+<h1 appEvidenzia>{{"Post Attivi" | maiuscolo}}</h1>
+
+<div *ngFor="let p of posts">
+    <app-post-card [post]="p">
+        <button (click)="disattiva(p.id)">Disattiva</button>
+    </app-post-card>
+
+</div>
