@@ -1,0 +1,9 @@
+{
+  "/api/*": "/$1",
+  "/movie/popular": "/movies-popular",
+  "/movie/popular/:id": "/movies-popular/:id",
+  "/movie/top_rated": "/movies-toprated",
+  "/reset": "/reset",
+  "movies-popular": 660,
+  "movies-toprated": 660
+}

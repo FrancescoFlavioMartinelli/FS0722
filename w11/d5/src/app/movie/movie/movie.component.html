@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let m of movies">
+        {{m.title}}
+        <img src="https://image.tmdb.org/t/p/w500/{{m.poster_path}}">
+        <button clss="btn" [ngClass]="{'btn-success': isLiked(m), 'btn-danger': !isLiked(m)}" (click)="toggleLike(m)">
+            {{isLiked(m) ? "Non mi piace" : "Mi piace"}}
+        </button>
+    </li>
+</ul>

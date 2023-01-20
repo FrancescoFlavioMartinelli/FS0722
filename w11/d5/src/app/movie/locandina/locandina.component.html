@@ -1,0 +1,6 @@
+
+        {{m.title}}
+        <img src="https://image.tmdb.org/t/p/w500/{{m.poster_path}}">
+        <button clss="btn" [ngClass]="{'btn-success': true, 'btn-danger': false}" (click)="toggleLike()">
+            {{liked ? "Non mi piace" : "Mi piace"}}
+        </button>
